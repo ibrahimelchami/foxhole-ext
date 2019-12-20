@@ -4,7 +4,7 @@ function loadAfterRefresh() {
         for (i=0;i<siteList.length;i++) {
             let item = document.createElement("li");
             item.innerHTML = siteList[i];
-            console.log(item);
+            //console.log(item);
             document.getElementById("urlList").appendChild(item);
         }
 
@@ -50,7 +50,7 @@ function addSite() {
     deleteBtn.innerHTML = '<img>';
     deleteBtn.addEventListener('click', deleteSite);
     li.appendChild(deleteBtn);
-    console.log(li);
+    //console.log(li);
     document.getElementById("urlList").appendChild(li);
     document.getElementById("myInput").value = "";
 }
@@ -58,14 +58,14 @@ function addSite() {
 // Delete single URL
 function deleteSite() {
     var parent = this.parentElement;
-    console.log(parent);
+    //console.log(parent);
     parent.remove();
     update();
 }
 
 // Remove all URLs
 function clickRmv() {
-    console.log('rmv');
+    //console.log('rmv');
     localStorage.clear();
     location.reload();
 }

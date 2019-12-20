@@ -15,5 +15,5 @@ chrome.webRequest.onBeforeRequest.addListener(
 
 		return;
 	},
-	{urls: ["http://*/*", "https://*/*"]},
+	{urls: ["*://*/*"]},
 	["blocking"]);

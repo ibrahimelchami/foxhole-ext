@@ -1,0 +1,101 @@
+body {
+    float: right;
+    margin: 0px;
+    padding: 20px;
+    height: auto;
+    width: 400px;
+    border-radius: 20px;
+}
+
+#myInput {
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 3px 10px 3px;
+    font-size: 16px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: #E5E5E5;
+}
+
+#addBtn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    background-color: #FF8D00;
+    color: white;
+    font-style: bold;
+}
+
+#rmvBtn {
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-top: 8px;
+    border-radius: 4px;
+    background-color: #FF8D00;
+    color: white;
+    font-style: bold;
+}
+
+/* .urls {
+    margin-right: auto;
+    border: solid #000;
+    border-width: 1px;
+    border-style: inset;
+    border-radius: 5px;
+} */
+
+#listContainer {
+    grid-column: 1 / 6;
+    /* height: 200px; */
+}
+
+#urlList {
+    margin-right: auto;
+    border: solid #000;
+    border-width: 1px;
+    border-style: inset;
+    border-radius: 5px;
+    height: 200px;
+    max-height: 200px;
+    width: 100%;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    overflow: scroll;
+}
+
+#urlList li {
+    padding: 12px 0 12px 10px;
+    font-size: 16px;
+}
+
+#urlList li:nth-child(odd) {
+    background-color: #E5E5E5;
+}
+
+.delBtn {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    float: right;
+    height: 20px;
+    width: 20px;
+    margin-right: 12px;
+    background: url(./images/cross-black.png);
+    background-size: cover;
+}
+
+.delBtn:hover {
+    background: url(./images/cross-red.png);
+    background-size: cover;
+}
+
+/* .delBtn img {
+    background-image: url(rime.png);
+} */
